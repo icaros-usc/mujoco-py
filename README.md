@@ -1,3 +1,12 @@
+This is a fork of mujoco-py where we will apply necessary patches. Current
+patches are:
+
+- Create lockfiles in `builder.py` in `/tmp` instead of in the mujoco-py
+  installation directory. This allows the code to run in a Singularity
+  container, where the installation directory is read-only.
+
+-----------------------------------------------------------------
+
 **Status:** Maintenance (expect bug fixes and minor updates)
 
 # mujoco-py [![Documentation](https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat)](https://openai.github.io/mujoco-py/build/html/index.html) [![Build Status](https://travis-ci.org/openai/mujoco-py.svg?branch=master)](https://travis-ci.org/openai/mujoco-py)
