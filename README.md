@@ -1,9 +1,10 @@
 This is a fork of mujoco-py where we will apply necessary patches. Current
 patches are:
 
-- Create lockfiles in `builder.py` in `/tmp` instead of in the mujoco-py
-  installation directory. This allows the code to run in a Singularity
-  container, where the installation directory is read-only.
+- Create lockfiles in `builder.py` in `$HOME` if possible (and in `/tmp`
+  otherwise) instead of in the mujoco-py installation directory. This allows the
+  code to run in a Singularity container, where the installation directory is
+  read-only.
 
 -----------------------------------------------------------------
 
